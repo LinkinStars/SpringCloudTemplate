@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringCloudTemplate.iml" filepath="$PROJECT_DIR$/.idea/SpringCloudTemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka_main.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka_main.iml" group="eureka" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka_test.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka_test.iml" group="eureka" />
+      <module fileurl="file://$PROJECT_DIR$/feign/feign.iml" filepath="$PROJECT_DIR$/feign/feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/feign_main.iml" filepath="$PROJECT_DIR$/.idea/modules/feign_main.iml" group="feign" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/feign_test.iml" filepath="$PROJECT_DIR$/.idea/modules/feign_test.iml" group="feign" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/provider.iml" filepath="$PROJECT_DIR$/.idea/modules/provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/provider_main.iml" filepath="$PROJECT_DIR$/.idea/modules/provider_main.iml" group="provider" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/provider_test.iml" filepath="$PROJECT_DIR$/.idea/modules/provider_test.iml" group="provider" />
+      <module fileurl="file://$PROJECT_DIR$/zuul/zuul.iml" filepath="$PROJECT_DIR$/zuul/zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zuul_main.iml" filepath="$PROJECT_DIR$/.idea/modules/zuul_main.iml" group="zuul" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zuul_test.iml" filepath="$PROJECT_DIR$/.idea/modules/zuul_test.iml" group="zuul" />
+    </modules>
+  </component>
+</project>

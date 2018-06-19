@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.netflix.netflix-commons:netflix-commons-util:0.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.netflix-commons/netflix-commons-util/0.3.0/8a6ffc41308c300197918eff3df1a7447ddaf468/netflix-commons-util-0.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.netflix-commons/netflix-commons-util/0.3.0/ad4134aae7384a8aad221ef748f87dda1cbf0b34/netflix-commons-util-0.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

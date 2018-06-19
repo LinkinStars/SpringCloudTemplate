@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.vlsi.compactmap:compactmap:1.2.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.vlsi.compactmap/compactmap/1.2.1/27aec1f3162c14b8a1178bb5c75ab43b618308ef/compactmap-1.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.vlsi.compactmap/compactmap/1.2.1/8358933ec3d4930993b7012b73c158a0b5ae9b74/compactmap-1.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
