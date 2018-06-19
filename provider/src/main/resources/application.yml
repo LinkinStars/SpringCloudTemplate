@@ -14,3 +14,12 @@ spring:
   application:
     name: service-provider
 
+  cloud:
+    config:
+      uri: https://127.0.0.1:8888/
+      label: master
+      profile: dev
+
+
+
+

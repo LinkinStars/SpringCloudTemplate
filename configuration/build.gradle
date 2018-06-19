@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '2.0.2.RELEASE'
+		springBootVersion = '2.0.3.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -15,18 +15,17 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-group = 'com.linkinstars'
+group = 'com.linkinstars.com'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
 	mavenCentral()
-	maven { url "https://repo.spring.io/milestone" }
 }
 
 
 ext {
-	springCloudVersion = 'Finchley.RC2'
+	springCloudVersion = 'Finchley.RELEASE'
 }
 
 dependencies {

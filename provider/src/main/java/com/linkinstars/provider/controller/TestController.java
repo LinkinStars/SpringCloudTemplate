@@ -14,8 +14,11 @@ public class TestController {
     @Value("${server.port}")
     String port;
 
+    @Value("${test-url}")
+    String testUrl;
+
     @RequestMapping("/test")
     public String hello() {
-        return "Now, the port is " + port;
+        return "Now, the port is " + port + "      The test url is " + testUrl;
     }
 }
