@@ -10,7 +10,7 @@ eureka:
 
 spring:
   application:
-    name: configuration
+    name: config-server
 
   cloud:
     config:
@@ -21,4 +21,4 @@ spring:
           default-label: master
           username:
           password:
-
+      fail-fast: true

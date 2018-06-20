@@ -16,7 +16,9 @@ spring:
 
   cloud:
     config:
-      uri: https://127.0.0.1:8888/
+      discovery:
+        enabled: true
+        service-id: config-server
       label: master
       profile: dev
 
