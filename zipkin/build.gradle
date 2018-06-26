@@ -3,9 +3,6 @@ buildscript {
 		springBootVersion = '2.0.3.RELEASE'
 	}
 	repositories {
-		maven {
-			url 'http://maven.aliyun.com/nexus/content/groups/public/'
-		}
 		mavenCentral()
 	}
 	dependencies {
@@ -14,7 +11,7 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse'
+apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
@@ -23,11 +20,7 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
-	maven {
-		url 'http://maven.aliyun.com/nexus/content/groups/public/'
-	}
 	mavenCentral()
-	maven { url "https://repo.spring.io/milestone" }
 }
 
 
@@ -36,9 +29,9 @@ ext {
 }
 
 dependencies {
-	compile('org.springframework.cloud:spring-cloud-starter-config')
-	compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
-	compile('org.springframework.cloud:spring-cloud-starter-zipkin')
+	compile group: 'io.zipkin.java', name: 'zipkin-server', version: '2.9.4'
+	compile group: 'io.zipkin.java', name: 'zipkin-autoconfigure-ui', version: '2.9.4'
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 

@@ -1,5 +1,5 @@
 server:
-  port: 8765
+  port: 9411
 
 eureka:
   instance:
@@ -12,11 +12,10 @@ spring:
   freemarker:
     prefer-file-system-access: false
   application:
-    name: service-feign
-  zipkin:
-    base-url: http://127.0.0.1:9411/zipkin/
+    name: zipkin-server
 
-feign:
-  hystrix:
-    enabled: true
-
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false

@@ -22,5 +22,10 @@
 [http://127.0.0.1:8769/back](http://127.0.0.1:8769/back/)  
 服务名称：service-zuul
 
+##### 5、configuration 配置中心
+访问地址：
+[http://127.0.0.1:8888/service-provider-dev.yml](http://127.0.0.1:8888/service-provider-dev.yml)
+服务名称：config-server
+   
 
 
