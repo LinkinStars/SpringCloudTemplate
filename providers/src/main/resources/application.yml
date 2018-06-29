@@ -17,6 +17,18 @@ spring:
   zipkin:
     base-url: http://127.0.0.1:9411/
 
+  cloud:
+      config:
+        discovery:
+          enabled: true
+          service-id: config-server
+        label: master
+        profile: dev
 
+  rabbitmq:
+      host: 127.0.0.1
+      port: 5672
+      username: linkinstar
+      password: linkinstar
 
 

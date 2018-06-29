@@ -30,9 +30,13 @@ public class TestController {
         return new RestTemplate();
     }
 
+    @Value("${test-url}")
+    String testUrl;
+
     @RequestMapping("/test")
     public String hello() {
-        return "Now, the port is " + port ;
+        LOG.log(Level.INFO, "provider");
+        return "Now, the port is " + port + "      The test url is " + testUrl;
     }
 
     @RequestMapping("/hello")
