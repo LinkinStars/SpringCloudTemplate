@@ -12,13 +12,26 @@ spring:
   application:
     name: config-server
 
+  profiles:
+    active: native
+
   cloud:
     config:
+       # 读取git的配置
+#      server:
+#        git:
+#          uri: https://github.com/LinkinStars/SpringCloudTemplate
+#          search-paths: SpringCloudConfig
+#          default-label: master
+#          username:
+#          password:
+#      fail-fast: true
+      # 读取本地配置
       server:
-        git:
-          uri: https://github.com/LinkinStars/SpringCloudTemplate
-          search-paths: SpringCloudConfig
-          default-label: master
-          username:
-          password:
-      fail-fast: true
+        native:
+          searchLocations: /Users/LinkinStar/IdeaProjects/SpringCloudTemplate/SpringCloudConfig/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

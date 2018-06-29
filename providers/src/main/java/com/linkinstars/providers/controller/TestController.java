@@ -1,12 +1,9 @@
-package com.linkinstars.provider.controller;
+package com.linkinstars.providers.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * 测试controller
@@ -16,8 +13,6 @@ import java.util.logging.Logger;
 @RefreshScope
 public class TestController {
 
-    private static final Logger LOG = Logger.getLogger(TestController.class.getName());
-
     @Value("${server.port}")
     String port;
 
@@ -26,7 +21,7 @@ public class TestController {
 
     @RequestMapping("/test")
     public String hello() {
-        LOG.log(Level.INFO, "provider");
         return "Now, the port is " + port + "      The test url is " + testUrl;
     }
+
 }

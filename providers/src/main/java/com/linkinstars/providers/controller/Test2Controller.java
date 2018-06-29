@@ -1,7 +1,6 @@
-package com.linkinstars.providers;
+package com.linkinstars.providers.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,12 +14,9 @@ import java.util.logging.Logger;
  * @author LinkinStar
  */
 @RestController
-public class TestController {
+public class Test2Controller {
 
-    private static final Logger LOG = Logger.getLogger(TestController.class.getName());
-
-    @Value("${server.port}")
-    String port;
+    private static final Logger LOG = Logger.getLogger(Test2Controller.class.getName());
 
     @Autowired
     private RestTemplate restTemplate;
@@ -28,15 +24,6 @@ public class TestController {
     @Bean
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
-    }
-
-    @Value("${test-url}")
-    String testUrl;
-
-    @RequestMapping("/test")
-    public String hello() {
-        LOG.log(Level.INFO, "provider");
-        return "Now, the port is " + port + "      The test url is " + testUrl;
     }
 
     @RequestMapping("/hello")

@@ -30,6 +30,13 @@ spring:
     username: linkinstar
     password: linkinstar
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+
+
 
 
 
