@@ -29,7 +29,7 @@ public class Test2Controller {
     @RequestMapping("/hello")
     public String hello2() {
         LOG.log(Level.INFO, "providers");
-        return "hello, " + restTemplate.getForObject("http://localhost:8763/test", String.class);
+        return "hello, " + restTemplate.getForObject("http://127.0.0.1:8763/test", String.class);
     }
 
 

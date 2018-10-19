@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 public class TestController {
 
     @Autowired
-    ITestService testService;
+    private ITestService testService;
 
     private static final Logger LOG = Logger.getLogger(TestController.class.getName());
 

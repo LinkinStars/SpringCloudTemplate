@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: 127.0.0.1
   client:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:8761/eureka/
@@ -17,6 +17,10 @@ spring:
   zipkin:
     base-url: http://127.0.0.1:9411/
 
+  sleuth:
+    sampler:
+      percentage: 1
+
   cloud:
       config:
         discovery:
@@ -28,8 +32,8 @@ spring:
   rabbitmq:
       host: 127.0.0.1
       port: 5672
-      username: linkinstar
-      password: linkinstar
+      username: guest
+      password: guest
 
 management:
   endpoints:
